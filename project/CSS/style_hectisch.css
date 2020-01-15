@@ -1,0 +1,23 @@
+article {
+    background-image: url(../img/verhalen/hectisch_smartphone.jpg);
+    background-attachment: scroll;
+    background-size: contain;
+    width: 100%;
+    height: 600%;
+    position: absolute;
+}
+
+/* Alleen tablet */
+@media screen and (min-width: 45em) and (max-width: 63.9375em) {
+    article {
+        background-image: url(../img/verhalen/hectisch_tablet.jpg);
+        height: 400%;
+    }
+}
+/* Desktop en groter */
+@media screen and (min-width: 64em) {
+    article {
+        background-image: url(../img/verhalen/hectisch_desktop.jpg);
+        height: 530%;
+    }
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Inloggen</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/inloggen.css">
+    <link rel="stylesheet" href="CSS/modal.css">
+    <link rel="stylesheet" href="CSS/stylesheet.css">
+</head>
+
+<body>
+<header>
+    <nav>
+        <section>
+            <a href="overzicht.html">
+                <img alt="logo" src="img/nslogo.svg">
+            </a>
+        </section>
+
+        <section>
+            <form>
+                <input type="text" name="search" placeholder="Zoeken..">
+            </form>
+            <button>
+                <a href="inlog.html">
+                    <img alt="inloggen" src="img/inlog.svg">
+                </a>
+                <span>Mijn NS</span>
+            </button>
+        </section>
+    </nav>
+
+    <nav>
+        <section>
+            <ul>
+                <li>
+                    <a href="overzicht.html">
+                        <img src="img/overzicht.svg" alt="Overzicht">
+                        <span>Overzicht</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="img/list.svg" alt="Alle verhalen">
+                        <span>Alle verhalen</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="opgeslagen.html">
+                        <img src="img/opslaan.svg" alt="Opgeslagen verhalen">
+                        <span>Opgeslagen verhalen</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="img/hartje2.svg" alt="Verhalen die je leuk vindt">
+                        <span>Verhalen die je leuk vindt</span>
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </nav>
+</header>
+
+<section>
+    <h1>Login met uw NS-account</h1>
+
+    <form>
+        <label for="email">E-mailadres</label>
+        <input type="text" name="email" id="email" aria-label="email" required aria-required="true"
+               onblur="validateEmail(this);">
+        <h2 class="info-text"></h2>
+        <label for="password">Wachtwoord</label>
+        <input type="password" name="password" id="password" aria-label="password" required aria-required="true"
+               minlength="8">
+        <button type="submit">Inloggen</button>
+        <a href="#" onclick="return false;" id="myBtn">
+            <img src="img/pijl.svg" alt="pijl">
+            <span>Wachtwoord vergeten?</span>
+        </a>
+    </form>
+</section>
+
+<div id="myModal" class="modal">
+    <section class="modal-content">
+        <h2>Wachtwoord vergeten?</h2>
+        <img class="close" src="img/close.svg" alt="close">
+        <p>Heeft u al een NS-account? Vul dan het bijbehorende e-mailadres hieronder in. Wij sturen u instructies
+            waarmee u uw nieuwe wachtwoord kunt aanmaken. Heeft u nog geen NS-account, maak dan eerst een NS-account
+            aan.</p>
+        <form>
+            <label for="email">E-mailadres</label>
+            <input type="text" name="forgottenPasswordEmail" id="forgottenPasswordEmail"
+                   aria-label="forgottenPasswordEmail" required aria-required="true" onblur="validateEmailForgottenPassword(this);">
+            <button type="submit" class="sent" disabled>Versturen</button>
+        </form>
+    </section>
+</div>
+</body>
+<footer>
+    <script src="js/login.js"></script>
+    <script src="js/modal.js"></script>
+</footer>
+</html>

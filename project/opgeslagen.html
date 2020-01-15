@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Opgeslapen verhalen</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/stylesheet.css">
+    <link rel="stylesheet" href="CSS/opgeslagen.css">
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <section>
+            <a href="overzicht.html">
+                <img alt="logo" src="img/nslogo.svg">
+            </a>
+        </section>
+
+        <section>
+            <form>
+                <input type="text" name="search" placeholder="Zoeken..">
+            </form>
+            <button>
+                <a href="inlog.html">
+                    <img alt="inloggen" src="img/inlog.svg">
+                </a>
+                <span>Mijn NS</span>
+            </button>
+        </section>
+    </nav>
+
+    <nav>
+        <section>
+            <ul>
+                <li>
+                    <a href="overzicht.html">
+                        <img src="img/overzicht.svg" alt="Overzicht">
+                        <span>Overzicht</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="img/list.svg" alt="Alle verhalen">
+                        <span>Alle verhalen</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="opgeslagen.html">
+                        <img src="img/opslaan2.svg" alt="Opgeslagen verhalen">
+                        <span>Opgeslagen verhalen</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="img/hartje2.svg" alt="Verhalen die je leuk vindt">
+                        <span>Verhalen die je leuk vindt</span>
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </nav>
+</header>
+<section>
+    <h1 id="h1">Opgeslagen verhalen</h1>
+    <p>Bekijk hier al uw opgeslagen verhalen voor onderweg.</p>
+</section>
+
+<section>
+    <article class="story" onclick="removeElement(this)">
+        <a href="#" onclick="return false;">
+            <img alt="sfeer hectisch" src="img/paranoia.jpg">
+            <img class="saved-story" src="img/opslaan2.svg" alt="Opgeslagen">
+        </a>
+        <section>
+            <h3>Paranoia</h3>
+        </section>
+    </article>
+
+    <article class="story" onclick="removeElement(this)">
+        <a href="#" onclick="return false;">
+            <img alt="sfeer letterlijk" src="img/letterlijk.jpg">
+            <img class="saved-story" src="img/opslaan2.svg" alt="Opgeslagen">
+        </a>
+        <section>
+            <h3>Letterlijk</h3>
+        </section>
+    </article>
+
+    <article class="story" onclick="removeElement(this)">
+        <a href="#" onclick="return false;">
+            <img alt="sfeer stoned" src="img/stoned.jpg">
+            <img class="saved-story" src="img/opslaan2.svg" alt="Opgeslagen">
+        </a>
+        <section>
+            <h3>Stoned</h3>
+        </section>
+    </article>
+
+    <article class="story" onclick="removeElement(this)">
+        <a href="#" onclick="return false;">
+            <img alt="sfeer steenkolenfrans" src="img/steenkolenfrans.jpg">
+            <img class="saved-story" src="img/opslaan2.svg" alt="Opgeslagen">
+        </a>
+        <section>
+            <h3>Steenkolenfrans</h3>
+        </section>
+    </article>
+</section>
+
+</body>
+<footer>
+    <script src="js/savedStories.js"></script>
+</footer>
+</html>

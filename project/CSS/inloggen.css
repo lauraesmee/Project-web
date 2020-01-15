@@ -1,0 +1,127 @@
+/*formulier*/
+
+body > section h1  {
+    color: #003082;
+}
+body > section {
+    background-color: #ffffff;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+    padding: 2rem;
+}
+
+form {
+    background-color: #ffc719;
+    padding: 2rem 0.9375rem;
+}
+
+form input, form button {
+    border: 0;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+
+form .check-email {
+    height: 1.125rem;
+    width: 1.125rem;
+}
+
+/*
+Heen en weer bewegen van het uitroepteken wanneer het e-mailadres niet correct is
+https://stackoverflow.com/questions/48502053/css-rotate-element-360-back-and-forth
+*/
+form .alert {
+    display: inline-block;
+    animation: rotation .5s infinite linear;
+}
+@keyframes rotation {
+    25% {
+        transform: rotate(45deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    75% {
+        transform: rotate(-45deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+form input {
+    height: 1rem;
+    width: calc(100% - 2rem);
+}
+form .info-text {
+    color: #db0029;
+    font-size: 1rem;
+    display: none;
+    width: 100%;
+}
+form button {
+    width: 100%;
+    background-color: rgb(0, 121, 211);
+    color: #fff;
+    transition: all .15s ease-in-out;
+}
+form button:hover {
+    background-color: rgb(0, 48, 130);
+}
+form a {
+   text-decoration: none;
+    color: #003082;
+}
+form a:hover {
+    text-decoration: underline;
+}
+
+form a img {
+    float: left;
+    width: 2.1875rem;
+    height: auto;
+    padding-right: 0.1875rem;
+}
+form a span {
+    line-height: 40px;
+}
+
+input[type="password"]:required:valid {
+    background-color: rgb(210, 255, 197);
+}
+input[type="password"]:invalid:focus  {
+    background-color: rgb(255, 149, 132);
+}
+
+
+/* Tablet */
+
+@media screen and (min-width: 40em) {
+
+    body > section {
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 10%;
+    }
+
+}
+
+/* Groter dan tablet */
+
+@media screen and (min-width: 50em) {
+
+    body > section {
+        margin-left: 30%;
+        margin-right: 30%;
+        margin-top: 10%;
+    }
+
+}

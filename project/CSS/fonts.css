@@ -1,0 +1,15 @@
+@font-face {
+  font-family: 'NS Sans';
+  src: url('fonts/nssans__-webfont.woff');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'NS Sans';
+  src: url('fonts/nssanita-webfont.woff');
+  font-style: italic;
+}
+@font-face {
+  font-family: 'NS Sans';
+  src: url('fonts/nssanbol-webfont.woff');
+  font-weight: 700;
+}
